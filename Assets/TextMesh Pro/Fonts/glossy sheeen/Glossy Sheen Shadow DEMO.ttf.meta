@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 9fa61c5d545b0462c8e6a32b465883f5
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Glossy Sheen
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8b1d16b5a73d34f6cb8b21d621cef9ef, type: 3}
+  - {fileID: 12800000, guid: 28c3b1d10eb414fa1a4369115be005c8, type: 3}
+  - {fileID: 12800000, guid: ddd3eef1fa122481cb463fc504147956, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
