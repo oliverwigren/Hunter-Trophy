@@ -15,9 +15,9 @@ public class PlayerMovement : MonoBehaviour
     public float sprintSpeed = 7.0f;
     public bool sprinting;
 
-    public float dashLength;
-    public float startDashCooldown;
-    private float dashCooldown;
+    //public float dashLength;
+    //public float startDashCooldown;
+    //private float dashCooldown;
 
     [SerializeField]
     private float stamina = 5;
@@ -116,20 +116,20 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, 135f);
         }
 
-        int a = 0;
-        if (dashCooldown <= 0 && Input.GetKeyDown(KeyCode.LeftAlt) && a == 0)
-        {
-            a++;
-            rb.transform.Translate(Vector2.left * dashLength * Time.deltaTime);
-            dashCooldown = startDashCooldown;
-            animator.SetTrigger("dashTrigger");
-        }
-        else
-        {
-            animator.ResetTrigger("dashTrigger");
-            dashCooldown -= Time.deltaTime;
-            a = 0;
-        }
+        //int a = 0;
+        //if (dashCooldown <= 0 && Input.GetKeyDown(KeyCode.LeftAlt) && a == 0)
+        //{
+        //    a++;
+        //    rb.transform.Translate(Vector2.left * dashLength * Time.deltaTime);
+        //    dashCooldown = startDashCooldown;
+        //    animator.SetTrigger("dashTrigger");
+        //}
+        //else
+        //{
+        //    animator.ResetTrigger("dashTrigger");
+        //    dashCooldown -= Time.deltaTime;
+        //    a = 0;
+        //}
     }
 
     void FixedUpdate()
